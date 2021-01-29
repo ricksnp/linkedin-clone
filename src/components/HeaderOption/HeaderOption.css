@@ -1,0 +1,31 @@
+.headerOption {
+    display: flex;
+    flex-direction: column;
+    /* Align the Icon in the middle of the text */
+    align-items: center;
+    /* Add space in b/t the icons */
+    margin-right: 20px;
+    color: gray;
+    cursor: pointer;
+}
+
+.headerOption:hover{
+    color: black;
+}
+
+.header__right {
+    display: flex;
+}
+
+.headerOption__title {
+    font-size: 12px;
+    font-weight: 480;
+}
+
+.headerOption__icon{
+    /* Keep the aspect-ratio */
+    object-fit: contain;
+    /* Overriding the size of the avatar */
+    height: 25px !important;
+    width: 25px !important;
+}

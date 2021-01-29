@@ -1,0 +1,44 @@
+.header {
+    /* everything goes into a line / row */
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 0.1px solid lightgray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    /* Next 3 lines allow the nav to stay at the top */
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.header__left {
+    display: flex;
+}
+
+.header__left > img {
+    /* Keep aspect ratio on the image */
+    object-fit: contain;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.header__search {
+    /* Keep space b/t image in search div */
+    padding: 10px;
+    display: flex;
+    /* Make sure input / search icon align properly */
+    align-items: center;
+    border-radius: 5px;
+    height: 22px;
+    color: gray;
+    background-color: #eef3f8;
+}
+
+.header__search > input {
+    /* 3 lines of code in order to make the input field clear  */
+    outline: none;
+    border: none;
+    background: none;
+    
+}
